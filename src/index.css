@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 150px;
+  margin: auto;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.container > input, .container > button {
+  margin: 1em;
+}
+
+.cs-opacity-screen {
+  width: inherit;
+  height: -webkit-fill-available;
+  position: absolute;
+  background: white;
+  opacity: 0.2;
+  z-index: -1;
+}
